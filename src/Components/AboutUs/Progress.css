@@ -1,0 +1,80 @@
+.Progress .LayoutStyle{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background: url(https://png.pngtree.com/background/20230617/original/pngtree-web-banner-3d-rendered-ui-for-seo-data-analytics-and-future-picture-image_3704909.jpg); */
+    background-size: cover;
+    background-position: center;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.7)), to(rgba(0,0,0,0.7))), url(https://png.pngtree.com/background/20230617/original/pngtree-web-banner-3d-rendered-ui-for-seo-data-analytics-and-future-picture-image_3704909.jpg);
+    color: white;
+    min-height: 100vh;
+    border-radius: 10px;
+    margin-top: 2px;
+}
+
+.Progress .LayoutStyle .Left{
+                /* display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                textAlign: 'center',
+                backdropFilter: 'blur(5px)',
+                fontSize: fontSizes(),
+                padding: '20px', */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    backdrop-filter: blur(2px);
+    font-size: calc(0.2rem + 1vw);
+    padding: 10px;
+    width: 50%;
+}
+.Progress .LayoutStyle .Right{
+
+    width: 50%;
+    min-width: 200px;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    border: 1px solid blue;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: calc(0.2rem + 1vw);
+}
+.Progress .LayoutStyle .Left .ButtonStyle{
+    background: linear-gradient(90deg, rgb(1, 51, 71) 0%, rgba(0, 212, 255, 1) 100%);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .Progress .LayoutStyle .Left{
+        width: 100%;
+        height: 50vh;
+        font-size: calc(0.3rem + 1vw);
+    }
+    .Progress .LayoutStyle .Right{
+        width: 100%;
+        height: 50vh;
+    }
+    .Progress .LayoutStyle .Left .ButtonStyle{
+        font-size: 0.7rem;
+    }
+    
+}

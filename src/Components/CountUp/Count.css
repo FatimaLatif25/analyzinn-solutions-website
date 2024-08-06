@@ -1,0 +1,36 @@
+/* src/components/CountUpNumber.css */
+.countup-card {
+    color: #00eeff;
+    /* padding: 15px; */
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* margin: 10px; */
+    font-size: calc(0.1rem + 1vw);
+    width: 40%;
+    /* transition: all 0.3s ease-in; */
+  }
+  
+  .countup-title {
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+    color: #595959;
+  }
+  
+  .countup-number{
+    font-size: calc(1.5rem + 2vw);
+    font-weight: bold;
+    color: hsl(210, 100%, 97%);
+    
+  }
+
+  @media screen and (max-width: 768px) {
+    .countup-card {
+      font-size: calc(0.2rem + 1vw);
+    }
+    .countup-number{
+      font-size: calc(1rem + 2vw);
+    }
+    
+  }
+  
