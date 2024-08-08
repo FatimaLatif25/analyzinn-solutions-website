@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+/* main contact Section */
+.main-contact {
+  background: rgba(61, 59, 59, 0.5);
+  background-image: url("../../assets/images/contact-us.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+  background-position: center;
+  padding: 50px 0;
+}
+.contact-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  color: #ffffff;
+  position: relative;
+}
+
+.contact-paragraph {
+  color: #d3c9c9;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px !important;
+}
+@media (max-width: 768px) {
+  .main-contact {
+    padding: 20px 0;
+  }
+
+  .contact-title {
+    font-size: 36px;
+  }
+
+  .contact-paragraph {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .main-contact {
+    padding: 15px 0;
+    background-position: top;
+  }
+
+  .contact-title {
+    font-size: 28px;
+  }
+  .contact-paragraph {
+    font-size: 1.2rem;
+  }
+}
