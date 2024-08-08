@@ -17,7 +17,7 @@ const Contact = () => {
           email: values.email,
           message: values.message,
         },
-        "lNFHdEMyncwOh4R2G" // EmailJS user ID
+        "lNFHdEMyncwOh4R2G" // Use Public key as a userID EmailJS
       )
       .then((response) => {
         message.success("Message sent successfully!", response);
@@ -31,22 +31,30 @@ const Contact = () => {
   return (
     <>
       <div className="contact-section">
-      <h1 className="main-heading">Contact Us</h1>
-        <Row gutter={16} justify="center" align="middle">
-          <Col xs={24} md={12} className="contact-details">
+        <Row gutter={[32, 16]} justify="center" align="middle">
+          <Col span={12} xs={24} md={12} className="contact-details">
             <h1>Let's Make Things Happen</h1>
-            <h3>Advanced software, advanced research for advanced people</h3>
+            <h3>
+              Feel free to contact us for any questions or request a Free
+              Consultation
+            </h3>
             <p>
-              “We have always looked for external resources that matched our
-              core values and with Annalyzinn Solutions and the leadership of
-              (ceo Annalyzinn Solutions) we finally found a smart and
-              conscientious team. I have personally referred Annalyzinn
-              Solutions and highly recommend.”
+              “We partner with our clients, take full ownership of their
+              business needs and devise tailored solutions for their unique
+              requirements. Our solutions are result-oriented, technology
+              driven, with end-to-end implementations Including Digital
+              Marketing, BI frameworks, and strategic consultancy.”
             </p>
           </Col>
-          <Col xs={24} md={12}>
-            <Card className="contact-form-card" title={<span className="card-title">Let's Talk</span>}>
-              <Form form={form} layout="vertical" onFinish={handleSubmit}>
+          <Col span={12} xs={24} md={12}>
+            <div className="contact-form-card">
+              <h2 className="card-title">Let's Talk</h2>
+              <Form
+                form={form}
+                layout="vertical"
+                onFinish={handleSubmit}
+                style={{ padding: "20px" }}
+              >
                 <Form.Item
                   label="Name"
                   name="name"
@@ -63,7 +71,7 @@ const Contact = () => {
                   rules={[
                     { required: true, message: "Please enter your email" },
                   ]}
-                   className="contact-form"
+                  className="contact-form"
                 >
                   <Input />
                 </Form.Item>
@@ -73,17 +81,21 @@ const Contact = () => {
                   rules={[
                     { required: true, message: "Please enter your message" },
                   ]}
-                   className="contact-form"
+                  className="contact-form"
                 >
                   <TextArea rows={4} />
                 </Form.Item>
                 <Form.Item>
-                  <Button type="primary" htmlType="submit" className="submit-button">
+                  <Button
+                    type="primary"
+                    htmlType="submit"
+                    className="submit-button"
+                  >
                     Get a Callback
                   </Button>
                 </Form.Item>
               </Form>
-            </Card>
+            </div>
           </Col>
         </Row>
       </div>

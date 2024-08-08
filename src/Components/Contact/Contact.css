@@ -1,89 +1,97 @@
 .contact-section {
-  background-color: #141617;
-  padding: 50px 40px 50px 40px;
-  color: #ffffff;
+  margin: 30px 40px;
+  padding: 30px 20px;
+  color: #e2dddd;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
 }
 .contact-details h1 {
   font-size: 48px;
   margin-bottom: 30px;
 }
 
-contact-details h1 {
-  font-size: 32px; /* Default size for larger screens */
-  color: #fff;
-  margin-bottom: 16px;
-}
-
-/* Adjust font size for medium screens */
-@media (max-width: 992px) {
-  .contact-details h1 {
-    font-size: 28px;
-  }
-}
-
-/* Adjust font size for small screens */
-@media (max-width: 768px) {
-  .contact-details h1 {
-    font-size: 24px;
-  }
-}
-
-/* Adjust font size for extra small screens */
-@media (max-width: 576px) {
-  .contact-details h1 {
-    font-size: 20px;
-  }
+.contact-details h1 {
+  font-size: 58px;
+  font-weight: 700;
+  color: #052644;
+  font-style: italic;
+  margin-bottom: 45px;
 }
 
 .contact-details h3 {
   font-size: 28px;
-  margin-bottom: 20px;
-}
-
-/* Adjust font size for medium screens */
-@media (max-width: 992px) {
-  .contact-details h3 {
-    font-size: 22px;
-  }
-}
-
-/* Adjust font size for small screens */
-@media (max-width: 768px) {
-  .contact-details h3 {
-    font-size: 20px;
-  }
-}
-
-/* Adjust font size for extra small screens */
-@media (max-width: 576px) {
-  .contact-details h3 {
-    font-size: 18px;
-  }
+  color: #182e3f;
+  font-style: italic;
+  margin-bottom: 30px;
 }
 .contact-details p {
   font-size: 20px;
+  color: #182e3f;
   font-style: italic;
   line-height: 1.5;
 }
 
-/* Adjust font size for medium screens */
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
+  .contact-section {
+    margin: 20px 30px;
+    padding: 25px 15px;
+  }
+
+  .contact-details h1 {
+    font-size: 48px;
+    margin-bottom: 35px;
+  }
+
+  .contact-details h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .contact-details p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    margin: 15px 20px;
+    padding: 20px 10px;
+  }
+
+  .contact-details h1 {
+    font-size: 38px;
+    margin-bottom: 30px;
+  }
+
+  .contact-details h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .contact-details p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    margin: 10px 15px;
+    padding: 15px 5px;
+  }
+
+  .contact-details h1 {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+
+  .contact-details h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
   .contact-details p {
     font-size: 14px;
-  }
-}
-
-/* Adjust font size for small screens */
-@media (max-width: 768px) {
-  .contact-details p {
-    font-size: 13px;
-  }
-}
-
-/* Adjust font size for extra small screens */
-@media (max-width: 576px) {
-  .contact-details p {
-    font-size: 12px;
   }
 }
 
@@ -118,43 +126,92 @@ contact-details h1 {
 }
 
 .contact-form-card {
-    padding: 24px;
-    background-color: #001529;
-    border: 3px solid #ffffff;
-    box-shadow: 0 4px 8px rgba(162, 156, 185, 0.897);
-    border-radius: 20px;
-  }
+  padding: 20px; /* Adjust padding */
+  margin-top: 20px; /* Adjust margin if necessary */
+  background-color: #001529;
+  border: 3px solid #ffffff;
+  box-shadow: 0 4px 8px rgba(162, 156, 185, 0.897);
+  border-radius: 20px;
+}
 .card-title {
-  font-size: 32px;
+  font-size: 38px;
   color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
+  padding-top: 10px;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
+  text-align: center;
 }
 .ant-card-head-title {
   text-align: center;
 }
+.contact-form {
+  margin-bottom: 10px;
+}
 .contact-form .ant-form-item-label > label {
-    font-size: 20px;
-    color: #ffffff;
+  font-size: 20px;
+  color: #ffffff;
 }
 
 .contact-form .ant-input,
 .contact-form .ant-input-textarea {
+  width: 100%;
   padding: 12px;
   border-radius: 4px;
   border: 1px solid #ccc;
 }
 .submit-button {
   width: 100%;
-  background-color: #266192;
+  margin-top: 20px;
+  background-color: #182e3f;
   border-color: #ebf0f3;
   height: 55px;
-  font-size: 16px;
+  font-size: 20px;
   border-radius: 8px;
 }
 
 .submit-button:hover,
 .submit-button:focus {
-  background-color: #182e3f;
+  background-color: #173d5a !important;
   border-color: #ffffff;
+}
+@media (max-width: 768px) {
+  .contact-form-card {
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 15px;
+  }
+
+  .card-title {
+    font-size: 30px;
+  }
+
+  .contact-form .ant-form-item-label > label {
+    font-size: 18px;
+  }
+
+  .submit-button {
+    font-size: 18px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form-card {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+
+  .card-title {
+    font-size: 24px;
+  }
+
+  .contact-form .ant-form-item-label > label {
+    font-size: 16px;
+  }
+
+  .submit-button {
+    font-size: 16px;
+    height: 45px;
+  }
 }
