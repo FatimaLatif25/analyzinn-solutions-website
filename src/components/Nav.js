@@ -3,13 +3,14 @@ import { Breadcrumb, Layout, Menu, theme,Drawer } from 'antd';
 import logo from './3.png';
 import {useState} from 'react';
 import {MenuOutlined} from "@ant-design/icons"
+import { Link } from 'react-router-dom';
 
 const { Header } = Layout;
 const items = [
-    { key: '1', label: 'Home' },
-    { key: '2', label: 'Services' },
-    { key: '3', label: 'About' },
-    { key: '4', label: 'Contacts' },
+    // { key: '1', label: <Link to="/">Home</Link> },
+    // { key: '2', label: <Link to="/services">Services</Link> },
+    { key: '3', label: <Link to="/about">About</Link> },
+    // { key: '4', label: <Link to="/contacts">Contacts</Link> },
 ];
 
 //   const itm=[
