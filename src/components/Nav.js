@@ -7,10 +7,10 @@ import { Link } from 'react-router-dom';
 
 const { Header } = Layout;
 const items = [
-    // { key: '1', label: <Link to="/">Home</Link> },
-    // { key: '2', label: <Link to="/services">Services</Link> },
+    { key: '1', label: <Link to="/">Home</Link> },
+    { key: '2', label: <Link to="/services">Services</Link> },
     { key: '3', label: <Link to="/about">About</Link> },
-    // { key: '4', label: <Link to="/contacts">Contacts</Link> },
+    { key: '4', label: <Link to="/contacts">Contacts</Link> },
 ];
 
 //   const itm=[

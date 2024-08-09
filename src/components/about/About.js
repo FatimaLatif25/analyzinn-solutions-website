@@ -7,7 +7,7 @@ import { PPoints } from './whyUs/PositivePoints/PositivePoint';
 const About=()=>{
     return(
         <div>
-            <Nav/>
+            {/* <Nav/> */}
             <WhyUs/>
             <Testimonial/>
         </div>
