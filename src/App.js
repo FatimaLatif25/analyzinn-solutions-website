@@ -4,18 +4,18 @@ import { Button, Flex } from 'antd';
 import 'antd/dist/reset.css';
 import Nav from './components/Nav';
 import About from './components/about/About';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
-const App = () => {
+function App(){
   return (
     <BrowserRouter> 
       <Nav />  
     <Routes>
-      <Route path="/" element={<Home />} />
+      {/* <Route path="/" element={<Home />} /> */}
       <Route path="/about" element={<About />} />
-      <Route path="/services" element={<Services />} />
-      <Route path="/contacts" element={<Contacts />} />
+      {/* <Route path="/services" element={<Services />} />
+      <Route path="/contacts" element={<Contacts />} /> */}
     </Routes>
     </BrowserRouter>
   );

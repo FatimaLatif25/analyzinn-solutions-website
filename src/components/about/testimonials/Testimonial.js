@@ -1,6 +1,6 @@
 import React from "react";
 import { Carousel } from "antd";
-import { testimonialsData } from "../../Constant/Testimonal/Testimonal";
+import { testimonialsData } from "./Testimonal/Testimonal";
 import './Testimonial.css';
 
 const Testimonial = () => {

@@ -30,7 +30,7 @@ const Nav = () => {
                 setOpenMenu(false);
 
             }} closable={false}>
-                <NavMenu isInline/>
+                <NavMenu isInline/> 
             </Drawer>
         </div>
     );
@@ -47,8 +47,8 @@ const NavMenu = ({isInline=false}) => {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'space-between',
-                    padding: '0 20px', // Add padding to the Header
-                    backgroundColor: '#000', // Set background color
+                    padding: '0 20px', 
+                    backgroundColor: '#000',  
                 }}
             >
                 <div style={{ display: 'flex', alignItems: 'center' }}>

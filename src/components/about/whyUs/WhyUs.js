@@ -2,7 +2,7 @@
 import { Layout,Tabs,Grid } from 'antd'
 import './whyus.css'
 // import ServTab from './Tab/ServTab'
-import { PPoints } from '../../Constant/PositivePoints/PositivePoint';
+import { PPoints } from './PositivePoints/PositivePoint';
 // import {PieChartOutlined,BranchesOutlined,ShareAltOutlined} from '@ant-design/icons'
 const WhyUs = () => {
     const { useBreakpoint } = Grid;
