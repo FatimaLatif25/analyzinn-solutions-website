@@ -1,0 +1,61 @@
+.DataComprehension {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+.DataComprehension .DataComprehension-Content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.DataComprehension .DataComprehension-Content h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+
+.DataComprehension .DataComprehension-Content h1.fadeIn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.DataComprehension .DataComprehension-Content .ant-card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.DataComprehension .DataComprehension-Content .ant-card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05) translate3d(0, -10px, 0);
+}
+
+.DataComprehension .DataComprehension-Content .ant-card .ant-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.DataComprehension .DataComprehension-Content .ant-card .ant-card-body h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.DataComprehension .DataComprehension-Content .ant-steps .ant-steps-item {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.DataComprehension .DataComprehension-Content .ant-steps.showSteps .ant-steps-item {
+  opacity: 1;
+  transform: translateX(0);
+}
