@@ -1,0 +1,22 @@
+.AutomationHeroSection {
+  text-align: center;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://assets.datamation.com/uploads/2023/05/dm-what-is-automation.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.AutomationHeroSection .AutomationHeroSection-Content{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5;
+}

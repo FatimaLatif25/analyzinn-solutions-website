@@ -1,0 +1,37 @@
+.MarketingStrategies *{
+    font-family: 'Poppins', sans-serif;
+    /* color: #fff; */
+    transition: all 0.3s ease;
+}
+.MarketingStrategies{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.MarketingStrategies .MarketingStrategies-Content{
+    width: 70%;
+    margin: 0 auto;
+    /* text-align: center; */
+}
+@media screen and (max-width: 768px){
+    .MarketingStrategies .MarketingStrategies-Content{
+        width: 90%;
+    }
+    
+}
+
+.MarketingStrategies .MarketingStrategies-Content h1{
+    text-align: center;
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translate(-100px,-50px);
+    transition: opacity 0.5s ease-out, transform 2s ease-out;
+}
+
+.MarketingStrategies .MarketingStrategies-Content h1.fadeIn{
+    transition-delay: 0.3s;
+    opacity: 1;
+    transform: translate(0,0);
+}

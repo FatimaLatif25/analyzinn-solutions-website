@@ -1,0 +1,33 @@
+.Services{
+    margin-top: 1px;
+}
+.Services > .LayoutStyle{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 100vh;
+    max-width: 100vw;
+    overflow: auto;
+    padding: 0 50px;
+    /* background: url(https://static.toiimg.com/thumb/msid-97280345,width-1280,height-720,resizemode-4/97280345.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.7)), to(rgba(0,0,0,0.7))), url(https://static.toiimg.com/thumb/msid-97280345,width-1280,height-720,resizemode-4/97280345.jpg);
+
+    
+}
+.Services > .LayoutStyle > .Tabs{
+    color: white;
+}
+.Services > .LayoutStyle  .Tabs  .ant-tabs-nav-list > .ant-tabs-tab > .ant-tabs-tab-btn span{
+    color: white;
+}
+.Services > .LayoutStyle  .Tabs  .ant-tabs-nav-list > .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn span{
+    color: #006eff;
+}

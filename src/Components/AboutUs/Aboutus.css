@@ -1,0 +1,56 @@
+.AboutUs{
+   
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(https://assets.datamation.com/uploads/2023/08/dm08172023-what-is-data-analytics.png);
+    background-size: cover;
+    background-position: center;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.7)), to(rgba(0,0,0,0.7))), url(https://assets.datamation.com/uploads/2023/08/dm08172023-what-is-data-analytics.png);
+    color: white;
+    min-height: 100vh;
+    border-radius: 10px;
+
+}
+
+.AboutUs .ButtonStyle{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+.AboutUs .OverLay{
+    
+
+    background: linear-gradient(90deg,rgb(0, 0, 255) 0% ,rgba(0, 0, 100, 1) 60%, rgb(0, 0, 255) 100%);
+    width: 97.5%;
+    opacity: 0.5;
+    min-height: 100vh;
+    mix-blend-mode: overlay;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.AboutUs .LayoutStyle{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+    min-height: calc(300px + 10vh);
+    background: transparent;
+    font-size: calc(0.5rem + 1vw);
+    font-weight: bold;
+    color: white;
+}
