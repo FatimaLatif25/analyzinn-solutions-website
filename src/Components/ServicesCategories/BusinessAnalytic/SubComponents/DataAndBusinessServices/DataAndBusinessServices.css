@@ -1,0 +1,50 @@
+.DataAndBusinessServices {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 2rem 0; */
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.DataAndBusinessServices .DataAndBusinessServices-Content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.DataAndBusinessServices .DataAndBusinessServices-Content .c1{
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('https://www.zr-tech.co.uk/images/Blogs/Covers/1644586923.jpg');
+}
+
+.DataAndBusinessServices .DataAndBusinessServices-Content .c2{
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('https://media.istockphoto.com/id/1309831122/vector/bundle-infographic-ui-ux-kit-elements-modern-infographic-dashboard-financial-statistics-and.jpg?s=612x612&w=0&k=20&c=-l-uLhk2KvHJMQNpEmnrJZFcjL4qVBavinwaqggqt2g=');
+}
+.DataAndBusinessServices .DataAndBusinessServices-Content .c3{
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('https://www.climber.eu/wp-content/uploads/sites/2/2020/03/ClimberNL_Blog_DataVisual_Milou_1400x877.jpg');
+}
+
+
+.DataAndBusinessServices .DataAndBusinessServices-Content .CardBody{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('https://www.zr-tech.co.uk/images/Blogs/Covers/1644586923.jpg'); */
+    min-height: 60vh;
+    color: white;
+    font-size: calc(0.05rem + 2vw);
+}
+
+.DataAndBusinessServices .DataAndBusinessServices-Content .CardBody .ant-card-head-title {
+  font-size: calc(0.15rem + 2vw);
+  color: white;
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .DataAndBusinessServices .DataAndBusinessServices-Content {
+    width: 90%;
+  }
+    
+}
