@@ -30,7 +30,7 @@ const CustomFooter = () => {
             <Space>
               <Button
                 icon={<FacebookOutlined style={{ fontSize: "24px" }} />}
-                href="https://facebook.com"
+                href="https://www.facebook.com/analyzinn"
                 className="footer-icon-button"
               />
               <Button
@@ -40,7 +40,7 @@ const CustomFooter = () => {
               />
               <Button
                 icon={<LinkedinOutlined style={{ fontSize: "24px" }} />}
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/analyzinn"
                 className="footer-icon-button"
               />
             </Space>
@@ -95,7 +95,7 @@ const CustomFooter = () => {
           </div>
         </Col>
       </Row>
-      <div className="footer-copyright">
+      <div>
         <Text className="footer-copyright-text">{footerContent.copyright}</Text>
       </div>
     </AntFooter>
