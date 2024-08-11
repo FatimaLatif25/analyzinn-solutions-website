@@ -13,14 +13,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      {/* <AboutUs />
-      <Progress />
-      <ServiceTab />
-      <WhyUs />
-      <Testimonial /> */}
-      {/* <BusinessAndData /> */}
-      <MarketingAnalytics />
-      {/* <Automation /> */}
+      
     </>
   )
 }
