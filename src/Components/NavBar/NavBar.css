@@ -1,0 +1,58 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px 20px; */
+    /* background-color: #333; */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* top: 0; */
+    
+}
+
+.header .logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.header .menu{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header .drawer-button{
+    display: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.ant-drawer-left .ant-drawer-content-wrapper .ant-drawer-content .ant-drawer-body .ant-menu-item{
+    color: white;
+}
+.ant-drawer-left .ant-drawer-content-wrapper .ant-drawer-content .ant-drawer-body .ant-menu-item:hover{
+    color: white;
+    background-color: rgb(0, 0, 231);
+}
+.ant-drawer-left .ant-drawer-content-wrapper .ant-drawer-content .ant-drawer-body .ant-menu{
+    height: 100%;
+}
+.ant-drawer-left .ant-drawer-content-wrapper .ant-drawer-content .ant-drawer-body{
+    padding: 0;
+}
+
+@media screen and (max-width: 768px){
+    .header .menu{
+        display: none;
+    }
+
+    .header .drawer-button{
+        display: block;
+        font-size: 1.5rem;
+        color: white;
+    }
+    
+}
