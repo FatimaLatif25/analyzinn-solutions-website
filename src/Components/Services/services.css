@@ -31,3 +31,21 @@
 .Services > .LayoutStyle  .Tabs  .ant-tabs-nav-list > .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn span{
     color: #006eff;
 }
+
+.Services > .LayoutStyle .Tabs .TabContent button{
+    background-color: #006eff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+
+    &:hover{
+        background-color: #0056b3;
+    }
+
+    & > *{
+        color: white;
+    }
+}

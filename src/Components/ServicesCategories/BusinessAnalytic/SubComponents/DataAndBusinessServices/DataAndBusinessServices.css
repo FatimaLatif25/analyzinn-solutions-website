@@ -7,6 +7,7 @@
   background-color: #f9f9f9;
   min-height: 100vh;
   text-align: center;
+  scroll-snap-align: center;
 }
 
 .DataAndBusinessServices .DataAndBusinessServices-Content {

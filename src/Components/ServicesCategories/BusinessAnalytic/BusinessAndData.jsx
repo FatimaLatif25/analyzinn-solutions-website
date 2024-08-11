@@ -4,10 +4,11 @@ import { ProblemSolSection } from './SubComponents/ProblemSolvingSection/Problem
 import { NeedForService } from './SubComponents/NeedForService/NeedForService'
 import { DataComprehension } from './SubComponents/DataComprehension/DataComprehension'
 import { DataAndBusinessServices } from './SubComponents/DataAndBusinessServices/DataAndBusinessServices'
+import './BusinessStyle.css'
 
 export const BusinessAndData = () => {
   return (
-    <div>
+    <div className='BusinessStyle'>
         <BusinessHeroSection />
         <ProblemSolSection />
         <NeedForService />

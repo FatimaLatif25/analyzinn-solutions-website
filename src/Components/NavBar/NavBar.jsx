@@ -1,16 +1,17 @@
 import React from 'react';
 import { Breadcrumb, Layout, Menu,Dropdown,Drawer } from 'antd';
 import { BarsOutlined} from '@ant-design/icons';
+import { Link } from 'react-router-dom';
 // import logo from './3.png';
 import './NavBar.css';
 
 const { Header} = Layout;
 const items = [
-    { key: '1', label: 'Home' },
-    { key: '2', label: 'Services' },
-    { key: '3', label: 'About' },
-    { key: '4', label: 'Contacts' },
-  ];
+    { key: '1', label: <Link to="/">Home</Link> },
+    { key: '2', label: <Link to="/services">Services</Link> },
+    { key: '3', label: <Link to="/about">About</Link> },
+    { key: '4', label: <Link to="/contacts">Contacts</Link> },
+];
 
   //responsive with bar menu on small screen using dropdown and drawer
 const NavBar = () => {
@@ -30,6 +31,10 @@ const NavBar = () => {
     return (
         <Header className="header">
             <div className="logo" >LOGO</div>
+            <div className='globe'>
+            {/* <img src="./src/assets/map.png" alt="" /> */}
+            {/* <img src="./src/assets/sphere.png" alt="sphere" /> */}
+            </div>
             <Menu className='menu'
              theme="dark" mode="horizontal" defaultSelectedKeys={['0']}
              >
@@ -56,6 +61,8 @@ const NavBar = () => {
           ))}
         </Menu>
       </Drawer>
+
+         
 
         </Header>
 

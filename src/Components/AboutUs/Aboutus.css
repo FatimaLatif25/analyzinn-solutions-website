@@ -13,7 +13,7 @@
     color: white;
     min-height: 100vh;
     border-radius: 10px;
-
+    
 }
 
 .AboutUs .ButtonStyle{
@@ -53,4 +53,49 @@
     font-size: calc(0.5rem + 1vw);
     font-weight: bold;
     color: white;
+    /* opacity: 0; */
+    animation: scroll-y 1s ease;
+    animation-timeline: view(90% 15%);
+}
+
+.AboutUs .LayoutStyle > div  h2{
+    background: linear-gradient(90deg, rgb(140, 218, 248) 0%, rgb(10, 250, 42) 30%, rgb(140, 218, 248) 60%, rgb(10, 250, 42) 100%);
+    background-clip: text;
+    color: hsl(0 0% 100% /0);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation: text-glow .5s linear;
+    animation-timeline: view(50% 9%);
+}
+.AboutUs .LayoutStyle > div p:first-of-type{
+    display: inline;
+    background: linear-gradient(90deg, rgb(140, 218, 248) 0%, rgb(10, 250, 42) 30%, rgb(140, 218, 248) 60%, rgb(10, 250, 42) 100%);
+    background-clip: text;
+    background-repeat: no-repeat;
+    color: transparent;
+    animation: text-glow 1s linear forwards;
+    animation-timeline: view(50% 5%);
+    animation-range: 0% 70%;
+    /* animation-delay: 0.5s; */
+
+}
+@keyframes text-glow {
+    0% {
+        background-size: 0% 100%;
+    }
+    100% {
+        background-size: 100% 100%;
+    }
+}
+
+@keyframes scroll-y {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    
 }
