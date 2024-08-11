@@ -1,6 +1,7 @@
 import React from "react";
 import { footerContent } from "../../Constant/FooterData/Footer";
 import { Layout, Typography, Row, Col, Space, Button } from "antd";
+import { Link } from "react-router-dom";
 import {
   FacebookOutlined,
   MailOutlined,
@@ -55,7 +56,7 @@ const CustomFooter = () => {
           </Text>
           {footerContent.services.map((service, index) => (
             <div key={index}>
-              <a href={service.href}>{service.text}</a>
+              <Link to={service.href}>{service.text}</Link>
             </div>
           ))}
         </Col>

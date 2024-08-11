@@ -4,9 +4,12 @@ export const footerContent = {
   logoSrc: logoImage,
 
   services: [
-    { href: "/service1", text: "Business Analytics" },
-    { href: "/service1", text: "Digital Marketing" },
-    { href: "/service1", text: "Automation & Integration" },
+    { href: "/services/business-and-data",
+       text: "Business Analytics" },
+    { href: "/services/marketing-analytics",
+       text: "Digital Marketing" },
+    { href: "/services/automation",
+       text: "Automation & Integration" },
   ],
 
   company: [

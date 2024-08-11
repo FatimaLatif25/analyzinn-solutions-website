@@ -3,6 +3,7 @@ import { Layout,Tabs,Grid } from 'antd'
 import './services.css'
 // import ServTab from './Tab/ServTab'
 import { Services } from '../../Constant/Services/Services'
+import { Link } from 'react-router-dom'
 // import {PieChartOutlined,BranchesOutlined,ShareAltOutlined} from '@ant-design/icons'
 const ServiceTab = () => {
     const { useBreakpoint } = Grid;
@@ -16,6 +17,7 @@ const ServiceTab = () => {
                         key: index + 1,
                         label: screens.md?service.title:null,
                         children: <div 
+                            className='TabContent'
                             style={screens.sm?{
                                 width: '70%',
                                 margin: 'auto',
@@ -26,6 +28,7 @@ const ServiceTab = () => {
                             >
                             <h1>{service.title}</h1>
                             <p>{service.Descriptions}</p>
+                            <button><Link to={service.link}>Learn More</Link></button>
                             </div>,
                         icon: service.icon
                     }
