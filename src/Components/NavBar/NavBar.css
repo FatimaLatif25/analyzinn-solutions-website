@@ -17,7 +17,7 @@
     --left: 120px;
 }
 .header .globe{
-    height: 500px;
+    width: 320px;
     aspect-ratio: 2/3;
     background:
     url(./src/assets/map.png) var(--left) 0,
@@ -34,11 +34,29 @@
     transition: 0.7s;
     transform: scale(0.3);
 }
-
 .header .globe:hover{
     --left: -300px;
     transform: scale(0.6);
+    top: -70px;
+    left: -120px;
 }
+
+
+@media screen and (max-width: 768px){
+
+    .header .globe{
+        
+        transform: scale(0.2);
+        top: -110px;
+        left: -160px;
+    }
+    .header .globe:hover{
+        --left: -300px;
+        transform:  scale(0.4);
+    }
+    
+}
+
 
 .header .logo{
     font-size: 1.5rem;
