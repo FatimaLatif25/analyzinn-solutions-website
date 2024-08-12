@@ -1,0 +1,39 @@
+.BusinessHeroSection *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+.BusinessHeroSection {
+  background: #f9f9f9;
+  text-align: center;
+  height: 90vh;
+    position: relative;
+}
+.BusinessHeroSection .Video-Container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+    overflow: hidden;
+}
+.BusinessHeroSection .Video-Container video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.4);
+}
+.BusinessHeroSection .Hero-Content {
+  position: relative;  
+    z-index: 1;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5;
+    /* background-color: lightblue; */
+}

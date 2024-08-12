@@ -1,0 +1,55 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background: #001529; /* Dark background */
+  height: 80px;
+}
+
+.logo a {
+ color: #fff;
+ font-size: 44PX;
+ text-decoration: none;
+ display: flex;
+ align-items: center;
+}
+.logo img {
+  height: 186px;
+  width: auto;
+  margin-right: 8px;
+}
+.menu-container {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+.menu {
+  display: flex;
+  background: none;
+  border: none;
+}
+.menu .ant-menu-item a {
+  color: #fff;
+  font-size: 16px;
+}
+.menu-button {
+  display: none;
+}
+.menu .ant-menu-item a:hover {
+  color: #fff;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none; /* Hide the menu on smaller screens */
+  }
+  
+  .menu-button {
+    display: block; /* Show the button on smaller screens */
+    background: #001529;
+    border: none;
+    color: white;
+  }
+}

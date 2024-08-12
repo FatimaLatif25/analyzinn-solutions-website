@@ -20,12 +20,18 @@ const Contact = () => {
         "lNFHdEMyncwOh4R2G" // Use Public key as a userID EmailJS
       )
       .then((response) => {
-        message.success("Message sent successfully!", response);
+        message.success({
+          content: "Message sent successfully!",
+          duration: 3, 
+        });
         form.resetFields();
       })
       .catch((err) => {
         console.error("FAILED...", err);
-        message.error("Failed to send message, please try again.");
+        message.error({
+          content: "Failed to send message, please try again.",
+          duration: 3, // Error message will disappear after 3 seconds
+        });
       });
   };
   return (
@@ -70,6 +76,7 @@ const Contact = () => {
                   name="email"
                   rules={[
                     { required: true, message: "Please enter your email" },
+                    { type: "email", message: "Please enter a valid email address" },
                   ]}
                   className="contact-form"
                 >

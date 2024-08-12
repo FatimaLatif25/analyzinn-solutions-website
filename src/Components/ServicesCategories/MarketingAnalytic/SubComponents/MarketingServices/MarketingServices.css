@@ -1,0 +1,22 @@
+.MarketingServices{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px 0;
+    /* text-align: center; */
+}
+
+.MarketingServices .MarketingServices-Content{
+    width: 80%;
+    margin: 0 auto;
+    text-align :center;
+}
+
+@media screen and (max-width: 768px){
+    .MarketingServices .MarketingServices-Content{
+        width: 90%;
+    }
+    
+}
