@@ -13,8 +13,18 @@
     min-height: object-fit;
     border: 1px solid white;
     margin: 2px 0;
+
+
+
+   
   /* height: 30vh; */
   /* overflow: hidden; */
+}
+
+.testimonialStyle  h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    /* margin: 20px 0; */
 }
 
 .testimonialStyle .slider-container {
@@ -22,7 +32,7 @@
   
   /* position: relative; */
   width: 100%;
-  height: calc(var(--height) + 30px) ;
+  height: calc(var(--height) + 60px) ;
   padding-top: 20px;
 
   mask-image: linear-gradient(to right,transparent,black,transparent);

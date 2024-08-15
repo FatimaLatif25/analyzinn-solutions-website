@@ -30,7 +30,7 @@
     border-radius: 10px;
     align-items: center;
     min-height: 50vh;
-    font-size: calc(0.7rem + 0.2vw);
+    font-size: calc(0.9rem + 0.2vw);
 }
 .WhyUs > .LayoutStyle  .Tabs  .ant-tabs-nav-list > .ant-tabs-tab > .ant-tabs-tab-btn span{
     color: white;

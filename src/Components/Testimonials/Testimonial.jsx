@@ -12,6 +12,8 @@ const Testimonial = () => {
           '--height': '100px',
           '--quantity': testimonialsData.length 
         }} >
+
+          <h3>Our Partners Speak</h3>
           <div className="item-list">
 
          { testimonialsData.map((item, index) => {
