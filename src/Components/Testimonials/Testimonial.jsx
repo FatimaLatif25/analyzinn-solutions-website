@@ -1,31 +1,43 @@
 import React from "react";
-import { Carousel } from "antd";
+import {  } from "antd";
 import { testimonialsData } from "../../Constant/Testimonal/Testimonial";
 import './testimonial.css';
 
 const Testimonial = () => {
   return (
     <div className="testimonialStyle">
-        <span>
-        <h1>Testimonials</h1>
-        <a href="#">View All {'->'}</a>
-        </span>
-      <Carousel arrows infinite={true} autoplay className="carouselStyle">
-      {testimonialsData.map((testimonial, index) =>
-        <div key={index}>
-          <div  className="contentStyle">
-            <span>
-            <img src={testimonial.image} alt="logo" />
-            <span>
-            <h3>{testimonial.name}</h3>
-            <h6>{testimonial.position}  | {testimonial.company} </h6>
-            </span>
-            </span>
-            <p>{testimonial.testimonial}</p>
-          </div>
+
+        <div className="slider-container" style={{
+          '--width': 'min(30vw, 400px)',
+          '--height': '100px',
+          '--quantity': testimonialsData.length 
+        }} >
+          <div className="item-list">
+
+         { testimonialsData.map((item, index) => {
+           return(
+             <div key={item.name} className="item" style={{
+              '--position': index + 1
+             }}>
+                <div className="testimonial">
+                   
+                    <div className="testimonial-author">
+                        <img src={item.image} alt="author" />
+                        <div className="author-info">
+                            <h4>{item.name}</h4>
+                            <h5>{item.designation}</h5>
+                        </div>
+                    </div>
+                    <div className="testimonial-content">
+                        <p>{item.testimonial}</p>
+                    </div>
+                </div>
+            </div>
+            );
+       })}
+              </div>
         </div>
-         )}
-      </Carousel>
+
     </div>
   );
 };

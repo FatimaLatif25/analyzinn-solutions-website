@@ -1,67 +1,105 @@
-.contentStyle{
-    margin: 0;
-    padding: 0 calc(2rem + 2vw);
-    aspect-ratio: 16/7;
-    color: #fff;
-        text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      font-size: calc(0.5rem + 1vw);
-}
-.contentStyle > span {
-    font-size: calc(0.5rem + 1vw);
-    font-weight: 700;
-    color: #f9a825;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.contentStyle span img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin: 10px;
+.testimonialStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./src/assets/testimonial-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  text-align: center;
+    min-height: object-fit;
+    border: 1px solid white;
+    margin: 2px 0;
+  /* height: 30vh; */
+  /* overflow: hidden; */
 }
 
-.carouselStyle{
-     width: 70%;
-    aspect-ratio: 16/7;
-    margin: auto;
-}
-.testimonialStyle{
+.testimonialStyle .slider-container {
+  overflow: hidden;
+  
+  /* position: relative; */
+  width: 100%;
+  height: calc(var(--height) + 30px) ;
+  padding-top: 20px;
+
+  mask-image: linear-gradient(to right,transparent,black,transparent);
+
+  & > .item-list {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: url(https://e1.pxfuel.com/desktop-wallpaper/483/252/desktop-wallpaper-dark-tech-black-technology.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: white;
-    text-align: center;
-    height: 100vh;
+    position: relative;
+    width: 100%;
+    min-width: calc(var(--width) * var(--quantity));
+    /* height: 100%; */
+    
+
+    & > .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      left: -20%;
+        width: var(--width);
+      height: var(--height);
+      border-bottom: 1px solid white;
+      animation: slide 15s linear infinite;
+      animation-delay: calc(15s / var(--quantity) * var(--position) * -1);
+
+      & > .testimonial {
+        width: 100%;
+        /* display: flex; */
+        font-size: calc(0.6rem + 0.2vw);
+        & > .testimonial-author {
+          display: flex;
+          justify-content: center;
+          gap: 30px;
+          align-items: center;
+          font-size: calc(0.8rem + 0.2vw);
+          font-weight: 600;
+          width: 100%;
+          color: turquoise;
+          /* height: 50%; */
+
+          & > img {
+            width: 10%;
+            height: 10%;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
 }
-.testimonialStyle a{
-    color: #f9a825;
-    text-decoration: none;
-}
-.testimonialStyle a:hover{
-    color: #f9a825;
-    text-decoration: underline;
-}
-.testimonialStyle >span{
-    font-size: calc(0.4rem + 1vw);
-    font-weight: 500;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+
+@keyframes slide {
+  to {
+    left: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .carouselStyle{
-        width: 100%;
-        aspect-ratio: 16/8;
+
+    .testimonialStyle .slider-container {
+        width: 95%;
+        mask-image: linear-gradient(to right,transparent,black,black,black,transparent);
+        & > .item-list {
+            & > .item {
+               left: -150%;
+               width: 35%;
+
+            }
+        }
     }
+}
+
+.testimonialStyle> .slider-container:hover .item-list .item{
+    animation-play-state: paused;
+    filter: grayscale(1);
+}
+.testimonialStyle> .slider-container:hover .item-list .item:hover{
+    filter: grayscale(0);
     
 }

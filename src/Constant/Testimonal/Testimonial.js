@@ -20,5 +20,19 @@ export const testimonialsData = [
       testimonial: 'In terms of Integration within the company, alongside Automation within tasks, Analyzinn has been incredible to work with. Complex Tasks are now only a click of a button away.',
       image: 'https://analyzinn.com/wp-content/uploads/2022/09/superloft-logo.webp'
     },
+    {
+      name: 'Van Bressen',
+      position: 'CEO',
+      company: 'Superloft Games',
+      testimonial: 'In terms of Integration within the company, alongside Automation within tasks, Analyzinn has been incredible to work with. Complex Tasks are now only a click of a button away.',
+      image: 'https://analyzinn.com/wp-content/uploads/2022/09/superloft-logo.webp'
+    },
+    {
+      name: 'Van Bressen',
+      position: 'CEO',
+      company: 'Superloft Games',
+      testimonial: 'In terms of Integration within the company, alongside Automation within tasks, Analyzinn has been incredible to work with. Complex Tasks are now only a click of a button away.',
+      image: 'https://analyzinn.com/wp-content/uploads/2022/09/superloft-logo.webp'
+    },
   ];
   

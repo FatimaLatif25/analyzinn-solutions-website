@@ -5,6 +5,9 @@
   padding: 0 20px;
   background: #001529; /* Dark background */
   height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .logo a {

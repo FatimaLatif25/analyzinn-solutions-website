@@ -1,0 +1,76 @@
+.ServicePageServices {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    align-items: center;
+  padding-top: 30px;
+  background: url('./src/assets/Service-Background.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    gap: 5px;
+    color: white;
+    &  h1{
+    font-weight: 600;
+    }
+    /* width: 100%; */
+
+
+  & > .serviceItem{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+        border-bottom: 1px solid #034a5c;
+        padding: 20px 0;
+        color: white;
+        text-align: center;
+        flex-wrap: wrap;
+        font-size: clamp(0.7rem, 1.5vw, 2rem);
+
+        backdrop-filter: blur(5px);
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+        border-radius: 10px;
+
+        & > img{
+            order: 1;
+            width: 40%;
+            aspect-ratio: 1.5/1;
+        }
+        & > div{
+            order: 0;
+            width: 50%;
+            padding: 0 20px;
+        }
+        
+  }
+  & > .serviceItem:nth-child(odd){
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .ServicePageServices{
+        min-height: 100vh;
+        & > .serviceItem{
+            flex-direction: column;
+            padding: 30px 0;
+            font-size: clamp(0.7rem, 1.5vw, 2rem);
+            & > img{
+                order: 0;
+                position: absolute;
+                top: -20%;
+                left: 60%;
+                width: 60%;
+                aspect-ratio: 2/1;
+            }
+            & > div{
+                order: 1;
+                width: 50%;
+                margin-right: auto;
+            }
+        }
+    }
+    
+}

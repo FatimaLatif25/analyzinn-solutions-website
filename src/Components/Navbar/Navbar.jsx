@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { MenuOutlined } from "@ant-design/icons";
+import { MenuOutlined, HomeOutlined, ContactsOutlined, ReadOutlined, ToolOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 import { Drawer, Menu, Button } from "antd";
 import "./Navbar.css";
@@ -19,10 +19,10 @@ const Navbar = () => {
   };
 
   const menuItems = [
-    { label: <Link to="/">Home</Link>, key: "home" },
-    { label: <Link to="/about">About</Link>, key: "about" },
-    { label: <Link to="/services">Services</Link>, key: "services" },
-    { label: <Link to="/contacts">Contact</Link>, key: "contacts" },
+    { label: <Link to="/"><HomeOutlined/>Home</Link>, key: "home" },
+    { label: <Link to="/about"><ReadOutlined/>About</Link>, key: "about" },
+    { label: <Link to="/services"><ToolOutlined/>Services</Link>, key: "services" },
+    { label: <Link to="/contacts"><ContactsOutlined/>Contact</Link>, key: "contacts" },
   ];
 
   useEffect(() => {
